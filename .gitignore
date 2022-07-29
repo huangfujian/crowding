@@ -1,0 +1,3 @@
+# 项目排除路径
+/crowding16-member-reverse/target/
+.idea

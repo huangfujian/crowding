@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="crowding15-member-utils" />
+        <module name="crowding08-member-eureka" />
+        <module name="crowding19-member-pay" />
+        <module name="crowding09-member-redis" />
+        <module name="crowding12-member-mysql" />
+        <module name="crowding10-member-entity" />
+        <module name="crowding16-member-reverse" />
+        <module name="crowding14-member-auth" />
+        <module name="crowding13-member-zuul" />
+        <module name="crowding11-member-api" />
+        <module name="crowding17-member-project" />
+        <module name="crowding18-member-order" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="crowding" target="1.8" />
+      <module name="crowding07-member-parent" target="1.8" />
+      <module name="crowding08-member-eureka" target="1.8" />
+      <module name="crowding09-member-redis" target="1.8" />
+      <module name="crowding10-member-entity" target="1.8" />
+      <module name="crowding11-member-api" target="1.8" />
+      <module name="crowding12-member-mysql" target="1.8" />
+      <module name="crowding13-member-zuul" target="1.8" />
+      <module name="crowding14-member-auth" target="1.8" />
+      <module name="crowding15-member-utils" target="1.8" />
+      <module name="crowding16-member-reverse" target="1.8" />
+      <module name="crowding17-member-project" target="1.8" />
+      <module name="crowding18-member-order" target="1.8" />
+      <module name="crowding19-member-pay" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
