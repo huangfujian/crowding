@@ -1,0 +1,19 @@
+server:
+  port: 3000
+spring:
+  application:
+    name: gx-crowd-mysql
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project_crowd?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+logging:
+  level:
+    com.gx.crowd.mapper: debug

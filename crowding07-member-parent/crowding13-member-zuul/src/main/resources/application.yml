@@ -1,0 +1,44 @@
+server:
+  port: 80
+spring:
+  application:
+    name: gx-crowd-zuul
+  servlet:
+    multipart:
+      file-size-threshold: 10MB
+      max-request-size: 100MB
+      enabled: true
+      max-file-size: 10MB
+  redis:
+    jedis:
+      pool:
+        max-idle: 100
+    host: 192.168.80.132
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+zuul:
+  host:
+    connect-timeout-millis: 7000
+    socket-timeout-millis: 7000
+  routes:
+    crowd-auth:
+      service-id: gx-crowd-auth
+      path: /**
+    crowd-project:
+      service-id: gx-crowd-project
+      path: /project/**
+    crowd-order:
+      service-id: gx-crowd-order
+      path: /order/**
+    crowd-pay:
+      service-id: gx-crowd-pay
+      path: /pay/**
+  ignored-services: '*'
+  sensitive-headers: '*'
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
