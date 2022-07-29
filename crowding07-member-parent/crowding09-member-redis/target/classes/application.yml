@@ -1,0 +1,11 @@
+server:
+  port: 2000
+spring:
+  application:
+    name: gx-crowd-redis
+  redis:
+    host: 192.168.80.132
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka

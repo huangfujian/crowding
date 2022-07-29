@@ -1,0 +1,11 @@
+server:
+  port: 1000
+spring:
+  application:
+    name: gx-crowd-eureka
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:1000/eureka

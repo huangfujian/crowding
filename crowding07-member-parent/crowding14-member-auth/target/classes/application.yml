@@ -1,0 +1,27 @@
+server:
+  port: 4000
+spring:
+  application:
+    name: gx-crowd-auth
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+  session:
+    store-type: redis
+  redis:
+    host: 192.168.80.132
+    jedis:
+      pool:
+        max-idle: 100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+short:
+  message:
+    access-key-secret: mzybEb7Gvpnx6hArmJe2LzEA1A6JXV
+    access-key-id: LTAI5tHzwCybBftRKLJzVAqG
+    sign-name: 阿里云短信测试
+    template-code: SMS_154950909
+    domain: dysmsapi.aliyuncs.com
+

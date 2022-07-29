@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "short.message",
+      "type": "com.gx.crowd.config.ShortMessageProperties",
+      "sourceType": "com.gx.crowd.config.ShortMessageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "short.message.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.ShortMessageProperties"
+    },
+    {
+      "name": "short.message.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.ShortMessageProperties"
+    },
+    {
+      "name": "short.message.domain",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.ShortMessageProperties"
+    },
+    {
+      "name": "short.message.sign-name",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.ShortMessageProperties"
+    },
+    {
+      "name": "short.message.template-code",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.ShortMessageProperties"
+    }
+  ],
+  "hints": []
+}

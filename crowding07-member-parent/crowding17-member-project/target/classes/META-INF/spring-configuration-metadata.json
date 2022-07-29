@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "aliyun.oss",
+      "type": "com.gx.crowd.config.UploadPictureProperties",
+      "sourceType": "com.gx.crowd.config.UploadPictureProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "aliyun.oss.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.UploadPictureProperties"
+    },
+    {
+      "name": "aliyun.oss.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.UploadPictureProperties"
+    },
+    {
+      "name": "aliyun.oss.bucket-domain",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.UploadPictureProperties"
+    },
+    {
+      "name": "aliyun.oss.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.UploadPictureProperties"
+    },
+    {
+      "name": "aliyun.oss.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.UploadPictureProperties"
+    },
+    {
+      "name": "aliyun.oss.input-stream",
+      "type": "java.io.InputStream",
+      "sourceType": "com.gx.crowd.config.UploadPictureProperties"
+    },
+    {
+      "name": "aliyun.oss.original-name",
+      "type": "java.lang.String",
+      "sourceType": "com.gx.crowd.config.UploadPictureProperties"
+    }
+  ],
+  "hints": []
+}

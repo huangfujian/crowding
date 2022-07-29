@@ -1,0 +1,19 @@
+server:
+  port: 6000
+spring:
+  application:
+    name: gx-crowd-order
+  session:
+    store-type: redis
+  redis:
+    host: 192.168.80.132
+    jedis:
+      pool:
+        max-idle: 100
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka

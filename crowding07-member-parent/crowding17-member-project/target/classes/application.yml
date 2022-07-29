@@ -1,0 +1,32 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: gx-crowd-project
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 192.168.80.132
+    jedis:
+      pool:
+        max-idle: 100
+  session:
+    store-type: redis
+  servlet:
+    multipart:
+      file-size-threshold: 10MB
+      max-request-size: 100MB
+      enabled: true
+      max-file-size: 10MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+aliyun:
+  oss:
+    access-key-id: LTAI5tR2r7GAdd6ZiPPybVpF
+    access-key-secret: TSFgBaVjUUSMwPVBeESYTGab3UtGxZ
+    bucket-domain: https://gx19083.oss-cn-shenzhen.aliyuncs.com
+    bucket-name: gx19083
+    end-point: https://oss-cn-shenzhen.aliyuncs.com

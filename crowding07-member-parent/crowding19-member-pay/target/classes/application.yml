@@ -1,0 +1,26 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: gx-crowd-pay
+  redis:
+    host: 192.168.80.132
+    jedis:
+      pool:
+        max-idle: 100
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+ali:
+  pay:
+    app-id: 2021000120614419
+    charset: UTF-8
+    sign-type: RSA2
+    gateway-url: https://openapi.alipaydev.com/gateway.do
+    notify-url: http://localhost/pay/notify
+    return-url: http://localhost/pay/return
+    alipay-public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjpC4uclFqJHfUF7ozIAnw/X7LcqHW4I1NL6EYgyfGdOFSB8tr5yO6zsggU0cNKpFEVXa5A9fnd4PVMge+kBJN4CQMl6TnIa5EncjninVBslOoKAfHfjqri91UZqInEdOMP6kMe16426oBeod8iqkQxt1FbRY8pbz2MJYrUKMvb755VJFUJlAq9tuHe+lidVmB4m68Jhp9jKZpH9nlJZ54vQCvZGrTQGVV7VlbT0lI1J0fV3JWAED3Ri9S+v+w6cvvmnoQhSQ4lysrGgMZw0yxfgIrLqLN0Blr+xID2MFCi0oYa0Ol3gz/08RSsSKhXQPnM1BP90pjl1A/jEHJEGWCQIDAQAB
+    merchant-private-key: MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDiN+Tn3+WVMkKtj+iG4KBcDWqYabnbh0I9nqYkof7UX6ts05oM/W82jB1E720AUkxsw677EkEm2WL2MhyMf7uv9VTfga3iMGhgYXfqDVKb9xSigVigDrnBXsSOwwgpEXcQ/aFs3MRRPj+m1JdR17oAZ6i27B/Vmtmyp6YUBqBeX7m5aJ9UqpJGMa5Fn0ARukI5w36M4ifyla/+7oJ5ND35XWiACuFI5tZ0JXrAq72kvqZMADvjEE72eEqH8LW1f6/jz9MBJBFGTscmcxD/p/98VUi9AjfBwFDcqMB9WZsljqmcEbxwUEPFJ9s+C9Z9hUq7uFI/WhOCKhzRmm0JLEadAgMBAAECggEAfSk3uSMjvxyDz8ujd5yonMW/iHxWnKOFftpcSkBm4dHc4uVggndmJOP4/b8Kq/bc2gCau8cpzPjRzC2Fpia2DXDLeK4jKtZlqY3D7vdYEXrvK8os4sHC/L4WOnal+TL0ka4CtlyfMeQjC4bsAhg9jSPNMQgLxP9cG4CuXr4b1JpPtyLalNrRj2AJjJQH6e3O6p+eCtN31OIbc1uuLM4ARh45WtUDBbQ0GXFyeIjzTWJYvm8Qoitldri9V6ELdb4M7iGLUNb6HPLpewlBdTrchf9LFEwmyZbs+6TT4ksk4Cf7kGedfGK01YyTbbPkaxMMBWmnutofeiEg9aSO/OyD8QKBgQDyKCAXURRvnic+IDDiXyYhCCLudAzhg1VeH/R3T9SFNL9x/j0poCKSIPUFNpt2+qBAR3KdlFkhbNp0wxsaR6ygv4VjmZYk1t5lIcIC9p4U0SfAroQorTVR0aeK3zoHEpynezBqXvqpDgmb45HvIDeTwCtM+p2lH/vk5UWC1m/j9wKBgQDvJoQihQ8oNEzL86HJ2ER8S2vOEU97L3E633aET1PwFx48JAAOnuqMWtTgN8ZfMGP/DCa3dgatbHwsA0Hb/szpfvQYAvlNIZnZ23DyCAxOAzuk5J4BXw64T4gW3rdZQQcbHlgkqDGW0Pn6029a51GP1otC+GrMu7LXmoIflymdCwKBgGATj3fw0VzfsM4zU3HdMnGUmtdk799hjjNEFmhoIfefz/1YU8f6Iv07WjtxSQlRstcOAemHfD2IxLvi1RP+L/2vPysfOrTvE1mopSMr2diEi3MlSoYhArCtr/2nR4ya09CXTcRGXslIKoPRLItliudyLTvjizyCjhxo4sVgcxBNAoGALK0CVDyNN1KF4jfySnXHXXztd8KOGZIkUf468r6rDJgVAuEqzZBseqnhSL3CpjexBo1rkixPVQiGLeax3/o6p4ga631quzkCt8shz2Unf09lTgmTZuguJMpevv7+O4NFY5CIoNh24xjJCk2DaPT7rKZEv88OjI6n+1UW5/XiRT8CgYAUybnQdtfr7r7sXSx20VFqT8iLtIBGlgt7ME4QjT1vvvCplDGCc1psWcKDFNNVvDB+xSc+ESbN9lzUHM12LwDZmzQfFcP13piCnTbXYWelAlrgFebECgZPptMieDvOzVJf9tVnzlJYmvUooxAjp6OMerKwoqfkJzyxoWMI/GHN7A==
